@@ -1,0 +1,81 @@
+/* Damos estilos generales con el selector universal */
+*{
+	margin:0px;
+	padding:0px;
+	font-family: 'Roboto Slab', serif;
+}
+/*Div que contiene el header*/
+#containerT{
+    display: grid;
+    grid-template-columns: 100%;
+}
+/*Div que contiene el buscador*/
+div.buscador{
+    grid-column-start: 1;
+    grid-column-end: 4;
+}
+#container{
+    width: 85%;
+    border: 2px solid #80E2E7;
+    margin-left: 7%;
+    border-radius: 7px;
+}
+/*Tabla*/
+table{
+    width: 100%;
+}
+#borde , th{
+    padding: 8px;
+    text-align: left;
+    background-color: #B7ECEE;
+    border-bottom: 1px solid #80E2E7;
+  
+}
+td{
+    border-bottom: 1px solid #80E2E7;
+}
+/*Boton para ver la historia clinica*/
+.boton{
+    width: 50%;
+	height: 35px;
+	border-radius: 5px;
+	border:1px solid white;
+	color:black;
+	font-size:15px;
+	background: white;
+	outline: none;
+	
+}
+.boton:hover{
+    background:#80E2E7;
+	color:white;
+}
+/*Buscador*/
+.form_search{
+    position: relative;
+    display: flex;
+    float: right;
+    background-color: initial;
+    padding: 10px;
+    border-radius: 10px;
+    margin-right: 8%;
+}
+.btn_search{
+    background-color: #80E2E7;
+    color: black;
+    padding: 0 20px;
+    border: 0;
+    cursor: pointer;
+  
+}
+/*Input del buscador*/
+#caja_busqueda{
+    width: 12%;
+    padding: 4px;
+    margin-left: 85%;
+    border: 1px solid #80E2E7;
+}
+/*Icono del buscador*/
+.icono{
+    margin-right: 5px;
+}

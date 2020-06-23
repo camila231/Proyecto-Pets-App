@@ -1,0 +1,112 @@
+/* Damos estilos generales con el selector universal */
+*{
+	margin:0px;
+	padding:0px;
+	font-family: 'Roboto Slab', serif;
+}
+/*Div que contiene el menú de navegación */
+.menu{
+	width: 100%;
+    height: auto;
+    background-color: #80E2E7;
+}
+/*Div que contiene el menú*/
+#logo{
+    position: absolute;
+    left:30px;
+    top:6px;
+}
+/*Logo del menú*/
+.logo_imagen{
+	width: 51px;
+}
+/*Titulo del menú*/
+.pets_app{
+	font-size: 30px;
+	color: black;
+    font-weight: bold;
+    position: relative;
+	top:-18px;
+}
+/*Menú de navegación*/
+header{
+    width: 100%;
+    z-index: -1;
+}
+.nav{
+    margin-right:1%;
+}
+.nav ul{
+   display: flex;
+   color: white;
+   background-color: #80E2E7;
+    margin:0;
+   justify-content: flex-end;
+   list-style:none;
+}
+.nav li a{
+    display: block;
+    padding: 20px 20px;
+	color:white;
+    text-decoration:none;
+}
+.nav ul ul{
+    display: block;
+	background-color: #80E2E7;
+    position: absolute;
+    top: 60px;
+    margin-left: 8px;
+    opacity: 0; 
+}
+.nav ul li:hover ul{
+    opacity: 1;
+}
+/*Formulario*/
+.cambiar{
+	margin:auto;
+	margin-top: 120px;
+	width: 30%;
+	height: auto;
+	border:1px solid black;
+	border-radius: 5px;
+	padding-left:20px;
+	padding-right:20px;
+	padding-top: 20px;
+} 
+/*Input del formulario*/
+.cambiar input{
+	width: 98%;
+	padding: 5px;
+	font-size:15px;
+	padding-left: 5px;
+	border-radius: 5px;
+	border:1px solid #80E2E7;
+	margin-bottom: 20px;
+	outline: none;
+}
+.cambiar input:focus{
+	box-shadow: 0 0 5px #3498db;
+}
+/*Titulo del formulario*/
+.cambiar h4{
+	font-size: 35px;
+	text-align: center;
+}
+/*Botón del formulario*/
+#boton{
+	width: 102%;
+	padding: 5px;
+	padding-left: 5px;
+	border-radius: 5px;
+	border:1px solid #80E2E7;
+	color:black;
+	margin-bottom: 20px;
+	font-size:15px;
+	background: none;
+	outline: none;
+	cursor: pointer;
+}
+#boton:hover{
+	background-color:#80E2E7;
+	color:white;
+}

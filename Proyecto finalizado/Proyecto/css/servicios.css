@@ -1,0 +1,45 @@
+/* Damos estilos generales con el selector universal */
+*{
+	margin:0px;
+	padding:0px;
+	font-family: 'Roboto Slab', serif;
+}
+/*Div que contiene la imagen de la vacuna*/
+.card_1{
+    border-right:2px solid #80E2E7;
+    width:33%;
+    height: 500px;
+    margin-left: 16.4%;
+}
+/*Imagen de la vacuna*/
+.img_vacuna{
+    width: 250px; 
+    height: 210px;
+}
+/*Div que contiene el titulo y un texto*/
+.card_2{
+    width: 95%;
+}
+/*Titulo*/
+.titulo_vacunacion, .titulo_consulta{
+    font-size: 40px;
+    font-weight: bold;
+}
+/*Texto con la información sobre la vacuna y consulta general*/
+.informacion_vacuna, .informacion_consulta{
+    font-size: 23px; 
+    color: #989387;  
+    text-align: justify;
+}
+/*Div que contiene la imagen de la consulta general*/
+.card_3{
+    width: 33%;
+    height: 500px;
+    margin-left: 50%;
+    margin-top: -37%;
+}
+/*Div que contiene el título y un texto*/
+.card_4{
+    width: 95%;
+    margin-left: 4%;
+}

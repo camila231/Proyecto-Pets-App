@@ -1,0 +1,56 @@
+/*Div que contiene el menú*/
+#containerheader{
+	width: 100%;
+    height: auto;
+    background-color: #80E2E7;
+}
+/*Div que contiene el logo del aplicativo web*/
+.logo_imagen{
+	width: 48px;
+	margin-right: 10px;
+	margin-top: 5px;
+}
+/*Nombre del aplicativo web*/
+.pets_app{
+	font-size: 25px;
+	margin-right: 52%;
+	margin-top: 12px;
+	color: black;
+	font-weight: bold;
+}
+/*Inicio del menú*/
+header{
+    width: 100%;
+    z-index: -1;
+}
+.nav{
+    margin-right:1%;
+}
+.nav ul  {
+   display: flex;
+   color: white;
+   background-color: #80E2E7;
+   margin: 0;
+   justify-content: flex-end;
+   list-style:none;
+}
+.nav li a{
+    display: block;
+    padding: 20px 20px;
+    color:white;
+    font-size: 17x;
+    text-decoration:none;
+}
+.nav ul ul{
+    display: block;
+	background-color: #80E2E7;
+    position: absolute;
+    top: 60px;
+    margin-left: 8px;
+    opacity: 0;
+    
+}
+.nav ul li:hover ul{
+    opacity: 1;
+}
+/*Fin del menú*/

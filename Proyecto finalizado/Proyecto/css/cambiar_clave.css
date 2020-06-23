@@ -1,0 +1,62 @@
+/* Damos estilos generales con el selector universal */
+*{
+	margin:0px;
+	padding:0px;
+	font-family: 'Roboto Slab', serif;
+}
+div#container{
+    display: grid;
+    grid-template-columns: 50% 50%; 
+}
+/*Div que contiene el formulario para cambiar la contraseña*/
+.cambiar{
+	margin:auto;
+	margin-top: 120px;
+	margin-left:420px;
+	width: 55%;
+	height: auto;
+	border:1px solid black;
+	border-radius: 5px;
+	padding-left:20px;
+	padding-right:20px;
+	padding-top: 20px;
+} 
+/*Diseño de los inputs del formulario para cambiar la contraseña*/
+.cambiar input{
+	width: 100%;
+	padding: 5px;
+	font-size:15px;
+	padding-left: 5px;
+	border-radius: 5px;
+	border:1px solid #80E2E7;
+	margin-bottom: 20px;
+	outline: none;
+}
+.cambiar input:focus{
+	box-shadow: 0 0 5px #3498db;
+}
+/*Titulo*/
+.cambiar h4{
+	font-size: 35px;
+	text-align: center;
+}
+/*Diseño del botón para cambiar la contraseña*/
+#boton{
+	width: 103%;
+	padding: 5px;
+	padding-left: 5px;
+	border-radius: 5px;
+	border:1px solid #80E2E7;
+	color:black;
+	margin-bottom: 20px;
+	font-size:15px;
+	background: none;
+	outline: none;
+	cursor: pointer;
+}
+#boton:hover{
+	background-color:#80E2E7;
+	color:white;
+}
+
+

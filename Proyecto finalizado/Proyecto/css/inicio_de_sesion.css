@@ -1,0 +1,73 @@
+/* Damos estilos generales con el selector universal */
+*{
+	margin:0px;
+	padding:0px;
+	font-family: 'Roboto Slab', serif;
+}
+/*Formulario*/
+.INICIO{
+	margin:auto;
+	margin-top: 140px;
+	margin-left:420px;
+	width: 30%;
+	height: auto;
+	border:1px solid black;
+	border-radius: 5px;
+	padding-left:20px;
+	padding-right:20px;
+	padding-top: 20px;
+	padding-bottom: 25px;
+} 
+.inicio-degra {
+	background-image: linear-gradient(to right, rgb(255, 255, 255), rgb(225, 245, 243));
+}
+/*Select*/
+.rol{
+	width: 102%;
+	padding: 5px;
+	font-size:15px;
+	padding-left: 5px;
+	border-radius: 5px;
+	border:1px solid #80E2E7;
+	margin-bottom: 20px;
+	outline: none;
+}
+/*Input del formulario*/
+.INICIO input{
+	width: 100%;
+	padding: 5px;
+	font-size:15px;
+	padding-left: 5px;
+	border-radius: 5px;
+	border:1px solid #80E2E7;
+	margin-bottom: 20px;
+	outline: none;
+}
+.INICIO input:focus{
+	box-shadow: 0 0 5px #3498db;
+}
+/*Títilo del formulario*/
+.INICIO h4{
+	font-size: 35px;
+	text-align: center;
+}
+/*Botón del formulario*/
+#boton{
+	width: 100%;
+	padding: 5px;
+	padding-left: 5px;
+	border-radius: 5px;
+	border:1px solid #80E2E7;
+	color:black;
+	margin-bottom: 20px;
+	font-size:15px;
+	background: none;
+	outline: none;
+	cursor: pointer;
+}
+#boton:hover{
+	background-color:#80E2E7;
+	color:white;
+}
+
+

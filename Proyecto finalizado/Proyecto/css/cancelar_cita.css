@@ -1,0 +1,36 @@
+/* Damos estilos generales con el selector universal */
+*{
+	margin:0px;
+	padding:0px;
+	font-family: 'Roboto Slab', serif;
+}
+div#container{
+    display:grid;
+    grid-template-columns: 50% 50%;
+}
+#cancelar{
+    padding: 20px;
+}
+#reservar{
+    padding: 20px;
+}
+div.solicitar{
+    width: 90%;
+}
+/*Tabla que muestra los datos de las citas*/
+table{
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+th, td {
+    padding: 8px;
+    text-align: left;
+    border-bottom: 1px solid #80E2E7;
+  }
+.boton{
+    background-color: #80E2E7;
+    border: 1px solid #80E2E7;
+    padding: 5%;
+    cursor: pointer;
+}

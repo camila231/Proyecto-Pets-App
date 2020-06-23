@@ -1,0 +1,111 @@
+/* Damos estilos generales con el selector universal */
+*{
+	margin:0px;
+	padding:0px;
+	font-family: 'Roboto Slab', serif;
+}
+/*Div que contiene el menú de navegación*/
+.menu{
+	width: 100%;
+    height: auto;
+    background-color: #80E2E7;
+}
+/*Div que contiene el logo del menú*/
+#logo{
+    position: absolute;
+    left:30px;
+    top:6px;
+}
+/*Logo del menú*/
+.logo_imagen{
+	width: 51px;
+}
+/*Titulo del menú*/
+.pets_app{
+	font-size: 30px;
+	color: black;
+    font-weight: bold;
+    position: relative;
+    top:-18px;
+}
+/*Menu de navegación*/
+header{
+    width: 100%;
+    z-index: -1;
+}
+.nav{
+    margin-right:1%;
+}
+.nav ul{
+   display: flex;
+   color: white;
+   background-color: #80E2E7;
+    margin:0;
+   justify-content: flex-end;
+   list-style:none;
+}
+.nav li a{
+    display: block;
+    padding: 20px 20px;
+	color:white;
+    text-decoration:none;
+}
+.nav ul ul{
+    display: block;
+	background-color: #80E2E7;
+    position: absolute;
+    top: 60px;
+    margin-left: 8px;
+    opacity: 0; 
+}
+.nav ul li:hover ul{
+    opacity: 1;
+}
+/*Div que contiene otro div con una table*/
+div#container{
+    display: grid;
+    grid-template-columns: 100%; 
+}
+/*Tabla*/
+table{
+    border-collapse: collapse;
+    width: 85%;
+}
+    
+th, td {
+    border: 1px solid #ddd;
+    padding: 5px;
+}
+tr:nth-child(even){
+    background-color: white;
+}
+th{
+    padding-top: 12px;
+    padding-bottom: 10px;
+    background-color: #80E2E7;
+}
+/*Imagen que muestra la tabla*/
+img{
+    width: 70%;
+}
+/*Botón para actualizar el estado del veterinario*/
+.activo{
+    width: 100%;
+    padding-top: 15%;
+    padding-bottom: 15%;
+    border-radius: 3px;
+    border-bottom: 1px solid #0DA82A;
+    background-color: #AAF6B8;
+    border: none;
+    cursor: pointer;
+}
+.inactivo{
+    width: 100%;
+    padding-top: 15%;
+    padding-bottom: 15%;
+    border-radius: 3px;
+    border-bottom: 1px solid #E1183A;
+    background-color: #E3ABB4;
+    border: none;
+    cursor: pointer;
+}

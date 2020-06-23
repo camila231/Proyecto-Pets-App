@@ -1,0 +1,81 @@
+/* Damos estilos generales con el selector universal */
+*{
+    margin: 0;
+    padding: 5px;
+    box-sizing: border-box;
+    font-family: 'Roboto Slab', serif;
+}
+/*Fondo de la vista*/
+body{
+    background-color: #80E2E7;
+}
+/*Mensajes*/
+#messages{
+    width: 50%;
+    height: 420px;
+    margin-left: 25%;
+    margin-top: 5%;
+    overflow-y: scroll;
+    border: 1px solid #F7F5F5;
+    background-color: white;
+    box-shadow: 0px 0px 5px #ccc inset;
+}
+.message{
+    margin: 20px;
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid #80E2E7;
+    background: white;
+}
+/*Formulario del chat*/
+form{
+    margin-top: 5px;
+    display: inline-flex;
+}
+/*Div que contiene los inputs y el botón del chat*/
+.container2{
+    width: 50%;
+    padding: 1%;
+    position: relative;
+    margin-left: 25%;
+    background-color: white;
+}
+/*Textarea del mensaje*/
+textarea{
+    resize: none;
+    width: 50%;
+    display: block;
+    padding: 4px;
+    border: none;
+    position: absolute;
+    background-color: #E0F4F7;
+    border-bottom: 1px solid paleturquoise;
+    border-radius: 3px;
+    margin-bottom: 10px;
+    margin-top: -2%;
+    margin-left: 31%;
+}
+/*Input del usuario*/
+input{
+    width:29.5%;
+    display: block;
+    padding: 12px;
+    border: none;
+    position: absolute;
+    background-color: #E0F4F7;
+    border-bottom: 1px solid paleturquoise;
+    border-radius: 3px;
+    margin-top: -1.5%;
+}
+/*Botón del chat*/
+.boton{
+    width: 14%;
+    cursor: pointer;
+    background: #80E2E7;
+    border: none;
+    border-radius: 5%;
+    color: black;
+    font-size: 15px;
+    margin-left: 82%;
+    margin-top: -12px;
+}

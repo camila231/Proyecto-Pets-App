@@ -1,0 +1,103 @@
+/* Damos estilos generales con el selector universal */
+*{
+	margin:0px;
+	padding:0px;
+	font-family: 'Roboto Slab', serif;
+}
+/*Div que contiene todo lo de la vista*/
+.container{
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+/*Div que contiene el título de la vista*/
+.containertitulo{
+	grid-column-start: 1;
+	grid-column-end: 4;
+
+}
+/*Titulo de la vista*/
+h5{
+    text-align: justify;
+    font-size: 14px;
+    margin-left: 2%;
+}
+/*Select de la disponibilidad del veterinario*/
+.estado{
+    display: block;
+    width: 60%;
+    margin-left: 5%;
+    padding: 5px;
+    background: #F0FFFF;
+    border: none;
+    border-bottom: 1px solid paleturquoise ;
+    border-radius: 3px;
+    margin-bottom: 10px;
+}
+/*Botón para actualizar la disponibilidad del veterinario*/
+#boton{
+    width: 61%;
+	height: 30px;
+	margin-left: 5%;
+    border: 1px solid paleturquoise;
+	color: black;
+    background: #81ecec;
+    cursor: pointer;
+}
+/*Letra del label para la hora*/
+.labelhora{
+	font-size: 15px;
+	margin-left: 4%;
+}
+/*Input de la hora*/
+.hora{
+	width: 22%;
+	margin-left:4%;
+    padding: 5px;
+    background: white;
+    border: none;
+    border-bottom: 1px solid paleturquoise ;
+}
+/*Botón para agregar la hora*/
+#horabutton{
+	width: 22%;
+	margin-left:4%;
+    padding: 5px;
+    background: 	#81ecec;
+    border: none;
+    border-bottom: 1px solid paleturquoise ;
+    cursor: pointer;
+}
+#borrar{
+    color:  black;
+    font-size: 25px;
+    padding: 5px;
+    cursor: pointer;
+}
+.icono{
+    cursor: pointer;
+}
+/*Tabla que muestra los datos de las reservas*/
+table{
+    border-collapse: collapse;
+    width: 85%;
+  }
+th, td {
+      border: 1px solid #ddd;
+      padding: 5px;
+}
+tr:nth-child(even){
+    background-color: #F6F1F1;
+}
+th{
+    padding-top: 12px;
+    padding-bottom: 10px;
+    background-color: #80E2E7;
+}
+input.atendido{
+    cursor: pointer;
+    border: none;
+    padding: 3px;
+    border-bottom: 1px solid #80E2E7;
+    border-right: 1px solid #80E2E7;
+    background-color: white;
+  }

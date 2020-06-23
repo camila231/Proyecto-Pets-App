@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../../images/LOGOO.PNG" />
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed|Roboto+Slab&display=swap" rel="stylesheet">
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="main.js"></script>
+    <link rel="stylesheet" href="css/chat.css">
+    <title>Pets App</title>
+</head>
+<body>
+    <!-- Contenedor principal -->
+    <div class="container">
+        <!--Div para los mensajes-->
+        <div id="messages"></div>
+        <!-- Formulario para el envio de mensajes -->
+        <!--Div para los input y el botón para enviar el mensaje-->
+        <div class="container2">
+        <form onsubmit="return addMessage(this);">
+            <input type="text" id="usuario" placeholder="Nombre" maxlength="20" required/> <br />
+            <textarea id="text" cols="70" rows="2" placeholder="Mensaje"  maxlength="500" required></textarea> <br />
+            <input type="submit" value="Enviar" class="boton" />
+        </form>
+    </div>
+    </div>
+</body>
+</html>

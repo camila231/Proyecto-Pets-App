@@ -1,0 +1,175 @@
+/* Damos estilos generales con el selector universal */
+*{
+	margin:0px;
+	padding:0px;
+	font-family: 'Roboto Slab', serif;
+}
+/*Div que contiene todo lo de esta vista*/
+#container{
+	width: 100%;
+	height: auto;
+	position: absolute;
+}
+/*Div que contiene el menú*/
+#containerheader{
+	width: 100%;
+	height: auto;
+}
+/*Diseño del logo del aplicativo web*/
+.logo_imagen{
+	width: 48px;
+	margin-right: 10px;
+	margin-top: 5px;
+}
+/*Nombre del plicativo web*/
+.pets_app{
+	font-size: 30px;
+	margin-right: 50.4%;
+	margin-top: 12px;
+	color: black;
+	font-weight: bold;
+}
+/*Inicio del menú*/
+header{
+    width: 100%;
+    z-index: -1;
+}
+.nav{
+    margin-right:1%;
+}
+.nav ul  {
+   display: flex;
+   color: white;
+   margin: 0;
+   justify-content: flex-end;
+   list-style:none;
+}
+.nav li a{
+    display: block;
+    padding: 20px 20px;
+	color:white;
+    text-decoration:none;
+}
+.nav ul ul{
+    display: block;
+	background-color: #80E2E7;
+    position: absolute;
+    top: 60px;
+    margin-left: 8px;
+    opacity: 0;
+    
+}
+.nav ul li:hover ul{
+    opacity: 1;
+}
+div.container1{
+	width: 55%;
+	background-color: white;
+	margin-left: 45%;
+}
+/*Fin del menú*/
+/*Div que contiene una figura  que tiene una imagen*/
+.figura{
+	width: 90%;
+	height: 700px;
+	border-radius: 0 70% / 0 100%;
+	border-top-right-radius: 1px;
+	background:#80E2E7;
+	float: right;
+	z-index: -2;
+	margin-top: -9.2%;
+}
+/*Diseño de la imagen que esta en la figura*/
+#img-index{
+	width: 480px;
+	margin-top: 90px;
+	margin-left: 27%;
+	border-radius: 30%;
+}
+/*Div que contiene una descripción del aplicativo*/
+div.container2{
+	width: 55%;
+	background-color: white;
+}
+/*Diseño de un titulo*/
+.texto1{
+	font-size: 54px;
+	font-weight: bold; 
+	margin-left: 10%; 
+	margin-top: 170px;
+}
+/*Diseño de la descripción*/
+.texto2{
+	font-size: 18px; 
+	margin-left: 7%; 
+	color: #989387;
+}
+/*Diseño de la descripción*/
+.texto3{
+	font-size: 18px; 
+	margin-left: 15%; 
+	margin-top: -1%; 
+	color: #989387;
+}
+/*Div que contiene otros dos div con la misión y la visión del aplicativo web*/
+div.container3{
+	position: absolute;
+	width: 100%;
+	height: 30%;
+	margin-top: 329px;
+	background-color: white;
+}
+/*Div que contiene la misión*/
+div.containermision{
+	width: 50%;
+	height: auto;
+	border-right: 2px solid #80E2E7;
+}
+/*Div que contiene la visión*/
+div.containervision{
+	width: 50%;
+	height: auto;
+	margin-left: 50%;
+	margin-top: -9.6%;
+}
+/*Titulo de la misión*/
+h2.letra_titulo_mision{
+	font-weight: bold;
+}
+/*Titulo de la visión*/
+h5.letra_mision_vision{
+	margin-top: 20px; 
+	color: #989387; 
+	font-size:20px;
+}
+/*Div que contiene el acerca de nosotros*/
+div.container4{
+	width: 100%;
+	height: 25%;
+	position: absolute;
+	margin-top: 40%;
+}
+/*Letra de la descripción del acerca de nosotros*/
+.letra_nosotros{
+	color: #989387; 
+	font-size: 20px; 
+}
+/*Inicio del footer*/
+.container5{
+	height: 20%;
+	padding: 3%;
+	margin-top: 53%;
+	background-color: #80E2E7;
+}
+.año{
+	font-size: 30px;
+	margin-top: 2%;
+	font-weight: bold;
+}
+.email{
+	margin-left: 75%;
+	font-size: 25px;
+	margin-top: -3%;
+	font-weight: bold;
+}
+/*Fin footer*/

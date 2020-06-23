@@ -1,0 +1,70 @@
+/* Damos estilos generales con el selector universal */
+*{
+    margin: 0%;
+    padding: 0%;
+    font-family: 'Roboto Slab', serif;
+}
+/*Body de la vista*/
+body{
+    background-color: white;
+}
+/*Div que contiene todo lo que la vista*/
+div#container{
+    display: grid;
+    grid-template-columns: 50% 50%;  
+}
+/*div.columna-1{
+background-color: rgb(214, 255, 253);
+}
+div.columna-2{
+background-color: greenyellow;
+}*/
+/*Titulo del formulario*/
+.titulo{
+    font-size: 20px;
+    grid-column-start: 1;
+    grid-column-end: 4;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+/*Letra del label del formulario*/
+.letra{
+    margin-left: 5%;
+}
+/*Input del formulario*/
+input{
+    display: block;
+    width: 80%;
+    margin-left: 5%;
+    padding: 5px;
+    background: #E0F4F7;
+    border: none;
+    border-bottom: 1px solid paleturquoise;
+    border-radius: 3px;
+    margin-bottom: 10px;
+}
+input[type="text"]{
+color:black;
+}
+/*Botón del formulario*/
+#boton{
+    width: 25%;
+    height: 33px;
+    margin-left: 82%;
+    margin-top: 5%;
+    position: relative;
+    border: 1px solid paleturquoise;
+    border-radius: 3px;
+	font-size: 19px;
+	color: black;
+    background: #80E2E7;
+    box-sizing: border-box;
+}
+#boton[type="submit"]{
+    text-decoration: none;
+    
+}
+#boton[type="submit"]:hover{
+    cursor: pointer;
+    /*background: rgb(246, 90, 220);*/
+}

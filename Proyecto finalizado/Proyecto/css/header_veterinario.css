@@ -1,0 +1,69 @@
+/* Damos estilos generales con el selector universal */
+*{
+    margin: 0%;
+    padding: 0%;
+    font-family: 'Roboto Slab', serif;
+}
+/*Div que contiene el menú*/
+div.menu{
+    grid-column-start: 1;
+    grid-column-end: 4;
+    background-color: #80E2E7;
+}
+/*Div que contiene el logo del aplicativo web*/
+#logo{
+    position: absolute;
+    left:30px;
+    top:6px;
+}
+/*Tamaño del logo*/
+.logo_imagen{
+	width: 51px;
+}
+/*Nombre del aplicativo web*/
+.pets_app{
+	font-size: 30px;
+	color: black;
+    font-weight: bold;
+    position: relative;
+    top:-10px;
+}
+/*Inicio del menú*/
+header{
+    width: 100%;
+    z-index: -1;
+}
+.nav{
+    margin-right:1%;
+}
+.nav ul{
+   display: flex;
+   color: white;
+   background-color: #80E2E7;
+    margin:0;
+   justify-content: flex-end;
+   list-style:none;
+   cursor: pointer;
+}
+.nav li a{
+    display: block;
+    padding: 20px 20px;
+    color:white;
+    font-size: 15px;
+    text-decoration:none;
+    cursor: pointer;
+}
+.nav ul ul{
+    width: 125px;
+    display: block;
+	background-color: #80E2E7;
+    position: absolute;
+    top: 60px;
+    margin-left: 10px;
+    opacity: 0;
+    cursor: pointer;
+}
+.nav ul li:hover ul{
+    opacity: 1;
+}
+/*Fin del menú*/

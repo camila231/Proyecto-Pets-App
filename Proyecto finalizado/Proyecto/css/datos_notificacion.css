@@ -1,0 +1,36 @@
+/* Damos estilos generales con el selector universal */
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto Slab', serif;
+}
+/*Div que contiene una tabla*/
+div#container{
+    display: grid;
+    grid-template-columns: 100%;
+}
+/*Tabla que muestra unos datos de una consulta*/
+table{
+  border-collapse: collapse;
+  width: 85%;
+}
+th, td {
+    border: 1px solid #ddd;
+    padding: 5px;
+}
+tr:nth-child(even){
+  background-color: #F6F1F1;
+}
+th{
+  padding-top: 12px;
+  padding-bottom: 10px;
+  background-color: #80E2E7;
+}
+/*Botón de aceptar de la tabla*/
+input.aceptar{
+  cursor: pointer;
+  border: none;
+  border-bottom: 1px solid #80E2E7;
+  border-right: 1px solid #80E2E7;
+  background-color: white;
+}

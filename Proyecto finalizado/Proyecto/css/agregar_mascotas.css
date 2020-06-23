@@ -1,0 +1,171 @@
+/* Damos estilos generales con el selector universal */
+*{
+	margin: 0;
+    padding: 0;
+    font-family: 'Roboto Slab', serif;
+}
+/*Div que contiene todo lo de la vista*/
+#container{
+	display: grid;
+	grid-template-columns: 50% 50%;
+}
+/*Div que contiene el formulario para agregar la mascota*/
+div.columna2{
+    visibility: hidden;
+}
+/*Div que contiene el boton "Agregar" que es para que se ponga visible el formulario de agregar la mascota*/
+.boton{
+    grid-column-start: 1;
+    grid-column-end: 4;
+}
+/*Botón que pone visible el formulario para agregar la mascota*/
+button{
+    width: 130px;
+    height: 40px;
+    margin-left: 30px;
+    border-radius: 5%;
+    border: none;
+    border-bottom: 1px solid #80E2E7;
+    border-right: 1px solid #80E2E7;
+    background-color: white;
+    cursor: pointer;
+}
+button:hover{
+  background-color: #E0F4F7;
+}
+/*Div que contiene la foto de la mascota*/
+.img_mascota{
+    width: 100px;
+    margin-top: -2px; 
+    border-radius: 50%;
+    background: #80E2E7;
+}
+label{
+    font-size: 20px;
+}
+/*Inputs del formulario donde estan los datos de la mascota*/
+input{
+    display: block;
+    width:95%;
+    padding: 4px;
+    background: #E0F4F7;
+    border: none;
+    border-bottom: 1px solid paleturquoise;
+    border-radius: 3px;
+    margin-bottom: 10px;
+}
+/*Botón para actualizar los datos de la mascota*/
+.boton_actualizar{
+    width: 98%;
+    height: 28px;
+    background-color: #AAF6B8;
+    border:none;
+    border-bottom: 1px solid #0DA82A;
+    cursor: pointer;
+    border-radius:10px 0 10px 0;  
+}
+/*Botón para borrar los datos de la mascota*/
+.boton_borrar{
+    width: 98%;
+    height: 28px;
+    background-color: #E3ABB4;
+    border:none;
+    border-bottom: 1px solid #E1183A;
+    cursor: pointer;
+    border-radius:10px 0 10px 0; 
+}
+/*Inputs del formulario de agregar la mascota*/
+.input_form2{
+    width: 45%;
+    padding: 5px;
+    margin-left: 25%;
+}
+/*Botón para agregar la mascota*/
+.boton_agregar{
+    width: 210px;
+    height: 29px;
+    margin-left: 32%;
+    background-color: #AAF6B8;
+    border:none;
+    border-bottom: 1px solid #0DA82A;
+    cursor: pointer;
+}
+/*Div que contiene el formulario que muestra los datos de la mascota*/
+div.formulario{
+    width:50%;
+    margin:30px auto;
+    padding:20px;
+}
+/*Imagen de la mascota*/
+#myImg{
+  border-radius: 100%;
+  margin-left: 25%;
+  cursor: pointer;
+  transition: 0.3s;
+}
+#myImg:hover{
+  opacity: 0.7;
+}
+/*Modal*/
+.modal {
+  display: none; /*Oculto por defecto */
+  position: fixed; /*Permanecer en el lugar */
+  z-index: 1;
+  padding-top: 100px; /*Ubicación de la caja */
+  left: 0;
+  top: 0;
+  width: 100%; /*Ancho completo */
+  height: 100%; /*Altura completa */
+  overflow: auto; /*Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Color de reserva */
+  background-color: rgba(0,0,0,0.9); /* Negro con opacidad */
+}
+/*Contenido modal (imagen) */
+.modal-content {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+}
+/*Título de la imagen modal */
+#caption {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+  text-align: center;
+  color: #ccc;
+  padding: 10px 0;
+  height: 150px;
+}
+/*Añadir animación*/
+.modal-content, #caption {  
+  animation-name: zoom;
+  animation-duration: 0.6s;
+}
+@keyframes zoom {
+  from {transform: scale(0.1)} 
+  to {transform: scale(1)}
+}
+/*El botón cerrar*/
+.close {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+.close:hover,
+.close:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+/* 100% Ancho de imagen en pantallas más pequeñas */
+@media only screen and (max-width: 700px){
+  .modal-content {
+    width: 100%;
+  }
+}

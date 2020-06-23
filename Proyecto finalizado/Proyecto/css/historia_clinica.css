@@ -1,0 +1,72 @@
+/* Damos estilos generales con el selector universal */
+*{
+	margin:0px;
+	padding:0px;
+	font-family: 'Roboto Slab', serif;
+}
+/*Div que contiene otros div*/
+.container{
+    width: 95%;
+    height: 50%;
+    border: 1px solid black;
+    margin-left: 2.4%;
+}
+/*Div que contiene el formulario*/
+.container1{
+    width: 50%;
+    height: auto;
+}
+/*Div que contiene el formulario*/
+.container2{
+    width: 50%;
+    height: auto;
+    float: right;
+    margin-top: -29.4%;
+}
+/*Título del formulario*/
+.titulo{
+    font-size: 40px;
+}
+.icono{
+    width: 48px; 
+    height: 45px;
+}
+/*Letra del label del formulario*/
+.letra{
+    margin-left: 5%;
+}
+/*Inputs del formulario*/
+.form1, #sexo{
+    width: 90%;
+    padding: 7px 20px;
+    margin: 8px 0;
+    margin-left: 5%;
+    box-sizing: border-box;
+    border:  1px solid #80E2E7;
+    border-radius: 3%;
+}
+/*Input del formulario*/
+.form3{
+    width: 90%;
+    padding: 45px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border:  1px solid #80E2E7;
+    margin-left: 5%;
+}
+/*Botón del formulario*/
+.boton{
+    width: 25%;
+    height: 30%;
+    margin-left: 38%;
+    margin-top: -2%;
+    margin-bottom: 10px;
+    padding-bottom: 5px;
+    position: relative;
+    border: 1px solid #80E2E7;
+	font-size: 19px;
+	color: black;
+    background: #80E2E7;
+    box-sizing: border-box;
+    cursor: pointer;
+}
