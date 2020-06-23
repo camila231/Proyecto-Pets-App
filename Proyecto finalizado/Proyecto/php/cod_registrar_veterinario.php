@@ -23,7 +23,6 @@
        * @var String $clave_veterinario               clave del veterinario, tipo cadena de caracteres.
        * @var String $estado                          estado del veterinario, tipo cadena de caracteres.
        */
-      $id = $_SESSION['administrador'];
       $identificacion_veterinario = $_POST['identificacionveterinario'];
       $nombre_1 = $_POST['nombre1'];
       $nombre_2 = $_POST['nombre2'];
@@ -52,9 +51,9 @@
        * @var $sql                 Sentencia sql para insertar datos de la tabla veterinario
        */
       $sql = "INSERT INTO tbl_veterinario(identificacion_veterinario,nombre_1,nombre_2,
-      apellido_1,apellido_2,email_veterinario,telefono_1,celular_1,foto,usuario_veterinario,clave_veterinario,disponibilidad,estado,identificacion_administrador)
+      apellido_1,apellido_2,email_veterinario,telefono_1,celular_1,foto,usuario_veterinario,clave_veterinario,disponibilidad,estado)
       VALUES ('$identificacion_veterinario','$nombre_1','$nombre_2','$apellido_1','$apellido_2',
-      '$email_veterinario','$telefono_1','$celular_1','$destino','$usuario_veterinario','$clave_veterinario','$disponibilidad','$estado','$id')"
+      '$email_veterinario','$telefono_1','$celular_1','$destino','$usuario_veterinario','$clave_veterinario','$disponibilidad','$estado')"
       or die (mysqli_error($conexion)); 
       /**
       * @var $consulta              Consulta sql en la base de datos para que no se repitan usuarios
